@@ -1,0 +1,11 @@
+# C# 기본 빌드 디렉터리
+bin/
+obj/
+
+# 사용자 설정 / IDE 설정
+.vscode/
+*.user
+*.suo
+
+# Excel 파일
+*.xlsxobj/

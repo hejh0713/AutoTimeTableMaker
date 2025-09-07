@@ -4,6 +4,7 @@ using OfficeOpenXml;
 
 class Program
 {
+    static Dictionary<string, string> dict = new Dictionary<string, string>();
     static void Main()
     {
         ExcelPackage.License.SetNonCommercialPersonal("Jeong JIHO");
@@ -13,7 +14,7 @@ class Program
         {
             var worksheet = package.Workbook.Worksheets[0];
 
-            for (int row = 1; row <= worksheet.Dimension.Rows; row++)
+            for (int row = 1; row <= 2; row++)
             {
                 string col1 = worksheet.Cells[row, 1].Text;
                 string col2 = worksheet.Cells[row, 2].Text;
